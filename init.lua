@@ -4,6 +4,9 @@ minetest.register_tool("spawn_teleporter:spawn_tool", {
     on_punch = function(pos, node, puncher)
         local player_name = puncher:get_player_name()
     end,
+    on_rightclick = function(pos, node, clicker)
+        local player_name = clicker:get_player_name()
+    end,
     local punched_player_privs = minetest.send_all(punched_player)
 })
 

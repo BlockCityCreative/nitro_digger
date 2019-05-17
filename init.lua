@@ -6,32 +6,32 @@ minetest.register_tool("nitro_digger:nitro_digger", {
         max_drop_level = 1,
         groupcaps = {
             crumbly = {
-                maxlevel = 2,
+                maxlevel = 1,
                 uses = 20,
                 times = { [1]=0.15, [2]=0.15, [3]=0.15 }
             },
             snappy = {
-                maxlevel = 2,
+                maxlevel = 1,
                 uses = 9000,
                 times = { [1]=0.15, [2]=0.15, [3]=0.15 }
             },
-			choppy = {
-                maxlevel = 2,
+	    choppy = {
+                maxlevel = 1,
                 uses = 9000,
                 times = { [1]=0.15, [2]=0.15, [3]=0.15 }
             },
-			fleshy = {
-                maxlevel = 2,
+	    fleshy = {
+                maxlevel = 1,
                 uses = 9000,
                 times = { [1]=0.15, [2]=0.15, [3]=0.15 }
             },
-			explody = {
-                maxlevel = 2,
+	   explody = {
+                maxlevel = 1,
                 uses = 9000,
                 times = { [1]=0.15, [2]=0.15, [3]=0.15 }
             },
-			oddly_breakable_by_hand = {
-                maxlevel = 2,
+	    oddly_breakable_by_hand = {
+                maxlevel = 1,
                 uses = 9000,
                 times = { [1]=0.15, [2]=0.15, [3]=0.15 }
             },

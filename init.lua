@@ -8,7 +8,7 @@ minetest.register_tool("node_killer:node_killer", {
             crumbly = {
                 maxlevel = 2,
                 uses = 20,
-                times = { [1]=1.00, [2]=0.80, [3]=0.60 }
+                times = { [1]=0.15, [2]=0.15, [3]=0.15 }
             },
         },
         damage_groups = {fleshy=2},

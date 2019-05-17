@@ -1,2 +1,2 @@
-# spawn teleporter
-A tool that teleports players when punched to the spawn.
+# Node Killer
+A tool that removes nodes with increadible speed.

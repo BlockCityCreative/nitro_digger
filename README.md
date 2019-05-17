@@ -1,2 +1,2 @@
 # Nitro Digger
-A tool that removes nodes with increadible speed.
+A tool that removes nodes quickly.

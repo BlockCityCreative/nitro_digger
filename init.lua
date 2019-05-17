@@ -12,7 +12,7 @@ minetest.register_tool("nitro_digger:nitro_digger", {
             },
             snappy = {
                 maxlevel = 1,
-                uses = ,
+                uses = 900,
                 times = { [1]=0.15, [2]=0.15, [3]=0.15 }
             },
 	    choppy = {

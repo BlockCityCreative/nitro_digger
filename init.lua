@@ -2,7 +2,7 @@ minetest.register_tool("nitro_digger:nitro_digger", {
     description = "Nitro Digger",
     inventory_image = "nitro_digger.png",
     tool_capabilities = {
-        full_punch_interval = 1.5,
+        full_punch_interval = 0,
         max_drop_level = 1,
         groupcaps = {
             crumbly = {

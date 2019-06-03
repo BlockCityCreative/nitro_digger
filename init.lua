@@ -85,12 +85,6 @@ minetest.register_tool("nitro_digger:nitro_digger", {
         },
 
     },
-    on_use = function(itemstack, user, pointed_thing)
-        local pos = minetest.get_pointed_thing_position(pointed_thing, nil);
-        if not minetest.is_protected(pos, user:get_player_name()) then
-            minetest.dig_node(pos);
-        end
-    end,
 })
 
 

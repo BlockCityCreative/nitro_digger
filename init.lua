@@ -45,6 +45,12 @@ minetest.register_tool("nitro_digger:nitro_digger", {
 			
         
 })
+function minetest.is_protected(pos, name)
+	if not mymod:can_interact(pos, name) then
+		return true
+	else
+		return nil
+	end
 minetest.register_craft({
     output = "nitro_digger:nitro_digger 1",
     recipe = {

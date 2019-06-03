@@ -51,6 +51,7 @@ function minetest.is_protected(pos, name)
 	else
 		return nil
 	end
+end
 minetest.register_craft({
     output = "nitro_digger:nitro_digger 1",
     recipe = {

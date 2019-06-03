@@ -42,11 +42,6 @@ minetest.register_tool("nitro_digger:nitro_digger", {
             },
         },
     },
-    if minetest.is_protected(pos, name) then
-       return nil,
-    else
-       return true,
-    end
 			
         
 })

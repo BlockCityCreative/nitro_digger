@@ -5,6 +5,11 @@ minetest.register_tool("nitro_digger:nitro_digger", {
         full_punch_interval = 0,
         max_drop_level = 1,
         groupcaps = {
+            cracky = {
+		maxlevel = 3,
+		uses = 900,
+		times = { [1]=0.1, [2]=0.1, [3]=0.1 }	
+	    },				
             crumbly = {
                 maxlevel = 3,
                 uses = 900,

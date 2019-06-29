@@ -92,18 +92,6 @@ local function check_protection(pos, name, text)
 
 	if minetest.is_protected(pos, name) then
 
-		minetest.log("action", (name ~= "" and name or "A mod")
-
-			.. " tried to " .. text
-
-			.. " at protected position "
-
-			.. minetest.pos_to_string(pos)
-
-			.. " with a bucket")
-
-		minetest.record_protection_violation(pos, name)
-
 		return true
 
 	end

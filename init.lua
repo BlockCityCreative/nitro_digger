@@ -86,10 +86,12 @@ minetest.register_tool("nitro_digger:nitro_digger", {
 
     },
 })
-if minetest.is_protected(pos,name) then
-    pointable = false,
-else 
-    pointable = true,
+old_is_protected = minetest.is_protected
+function minetest.is_protected(pos, name)
+	if not nitro_digger:can_interact(pos, name) then
+		return true
+	end
+	return old_is_protected(pos, name)
 end
 
 minetest.register_craft({

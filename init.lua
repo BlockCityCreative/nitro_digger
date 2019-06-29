@@ -86,13 +86,34 @@ minetest.register_tool("nitro_digger:nitro_digger", {
 
     },
 })
-old_is_protected = minetest.is_protected
-function minetest.is_protected(pos, name)
-	if not nitro_digger:can_interact(pos, name) then
+
+
+local function check_protection(pos, name, text)
+
+	if minetest.is_protected(pos, name) then
+
+		minetest.log("action", (name ~= "" and name or "A mod")
+
+			.. " tried to " .. text
+
+			.. " at protected position "
+
+			.. minetest.pos_to_string(pos)
+
+			.. " with a bucket")
+
+		minetest.record_protection_violation(pos, name)
+
 		return true
+
 	end
-	return old_is_protected(pos, name)
+
+	return false
+
 end
+
+
+
 
 minetest.register_craft({
 

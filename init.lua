@@ -109,11 +109,7 @@ minetest.register_craft({
 
     recipe = {
 
-        {"default:pick_diamond", "default:pick_diamond"                       },
-
-        {"default:pick_diamond", "default:pick_diamond"},
-
-        {"default:pick_diamond", "default:pick_diamond"}
+        {"default:stick"}
 
     }
 

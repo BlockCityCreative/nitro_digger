@@ -109,11 +109,11 @@ minetest.register_craft({
 
     recipe = {
 
-        {"default:pick_diamond", "default:pick_diamond"                       },
+        {"default:axe_wood",	"",	"default:pick_wood"	},
 
-        {"default:pick_diamond", "default:pick_diamond"},
+        {"",	"default:shovel_wood",	""},
 
-        {"default:pick_diamond", "default:pick_diamond"}
+        {"default:sword_wood",	"",	"farming:hoe_wood"},
 
     }
 
